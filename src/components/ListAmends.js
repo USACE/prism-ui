@@ -5,7 +5,7 @@ const ListAuths = () => {
 
   const getAuths = async () => {
     try {
-      const response = await fetch("http://localhost:5000/auths");
+      const response = await fetch("http://localhost:5000/amends");
 
       const jsonData = await response.json();
       setAuths(jsonData);
@@ -22,7 +22,7 @@ const ListAuths = () => {
   return (
     <Fragment>
       {" "}
-      <table className="table table-striped table-hover mt-5 text-center">
+      <table className="table mt-5 text-center">
         <thead>
           <tr>
             <th>PL Key</th>
